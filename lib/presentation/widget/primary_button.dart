@@ -17,19 +17,23 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    switch(type){
-      case PrimaryButtonType.type1:{
-        return _type1();
-      }
-      case PrimaryButtonType.type2:{
-        return _type2();
-      }
-      case PrimaryButtonType.type3:{
-        return _type3();
-      }
-      default : {
-        return _type1();
-      }
+    switch (type) {
+      case PrimaryButtonType.type1:
+        {
+          return _type1();
+        }
+      case PrimaryButtonType.type2:
+        {
+          return _type2();
+        }
+      case PrimaryButtonType.type3:
+        {
+          return _type3();
+        }
+      default:
+        {
+          return _type1();
+        }
     }
   }
 
@@ -40,7 +44,7 @@ class PrimaryButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          primary: AppColor.ink01,
+          backgroundColor: AppColor.ink01,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
           ),
@@ -60,7 +64,7 @@ class PrimaryButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          primary: AppColor.ink01,
+          backgroundColor: AppColor.ink01,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
           ),
@@ -80,7 +84,7 @@ class PrimaryButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          primary: AppColor.ink01,
+          backgroundColor: AppColor.ink01,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
           ),
@@ -92,7 +96,6 @@ class PrimaryButton extends StatelessWidget {
       ),
     );
   }
-
 }
 
 enum PrimaryButtonType {
