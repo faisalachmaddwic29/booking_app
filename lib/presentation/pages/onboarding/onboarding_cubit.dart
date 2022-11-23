@@ -1,12 +1,10 @@
 import 'package:bloc/bloc.dart';
-
 import 'onboarding_state.dart';
 
 class OnboardingCubit extends Cubit<OnboardingState> {
   OnboardingCubit() : super(OnboardingState().init());
 
   void next() {
-    print(state.clone());
     if (state.currentIndex < state.onboardinglist.length - 1) {
       emit(state.clone()..currentIndex = state.currentIndex + 1);
     } else if (state.currentIndex == state.onboardinglist.length - 1) {

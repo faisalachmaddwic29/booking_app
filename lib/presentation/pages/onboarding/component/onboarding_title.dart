@@ -1,5 +1,5 @@
 import 'package:booking_app/config/theme/theme.dart';
-import 'package:booking_app/extension/extension.dart';
+import 'package:booking_app/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingTitle extends StatelessWidget {
